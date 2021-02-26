@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SimpleChat</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="enter_room">Enter room</string>
+    <string name="message">Message..</string>
+    <string name="send">Send</string>
+    <string name="text_sample">Write a message</string>
+    <string name="name">Name</string>
+</resources>
