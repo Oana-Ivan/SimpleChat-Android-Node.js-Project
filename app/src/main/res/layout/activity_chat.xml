@@ -7,50 +7,65 @@
     tools:context=".ChatActivity">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/rv"
+        android:layout_above="@+id/et_message"
     />
 
     <EditText
+        android:id="@+id/et_message"
+        android:hint="@string/message"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:background="@drawable/et_name_design"
         android:padding="8dp"
-        android:hint="@string/message"
+        android:textSize="16sp"
+
         android:layout_alignParentBottom="true"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
         android:layout_marginLeft="16dp"
-        android:id="@+id/et_message"
+
         android:layout_toStartOf="@+id/tv_sendBtn"
-        android:textSize="16sp"
-        android:layout_toLeftOf="@+id/tv_sendBtn" />
+        android:layout_toLeftOf="@+id/tv_sendBtn"/>
 
     <TextView
+        android:id="@+id/tv_sendBtn"
+        android:text="@string/send"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/send"
+
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="16dp"
         android:layout_alignParentRight="true"
+
         android:textColor="@color/colorPrimaryDark"
-        android:id="@+id/tv_sendBtn"
         android:visibility="invisible"
         />
 
     <ImageView
+        android:id="@+id/pickImageBtn"
+        android:src="@drawable/ic_baseline_image_24"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_baseline_image_24"
-        android:padding="8dp"
+
         android:layout_alignParentBottom="true"
-        app:tint="@color/colorPrimaryDark"
-        android:layout_toEndOf="@+id/et_message"
-        android:layout_marginBottom="16dp"
-        android:id="@+id/pickImageBtn"
-        android:layout_toRightOf="@+id/et_message"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true" />
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/et_message"
+        android:layout_toRightOf="@+id/et_message"
+        android:layout_marginBottom="16dp"
+
+        android:padding="8dp"
+        app:tint="@color/colorPrimaryDark"
+
+        />
+
 </RelativeLayout>
